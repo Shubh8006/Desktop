@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color: azure;">
+    <h1>Learning with chai or code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log(' hey i am shubham');
+    // }, 3000) // time is in millisecond
+
+
+    // const sayshubham = function(){
+    //     console.log('i am shubham');
+    // } // set time out by giving refernce of the function
+    // setTimeout(sayshubham, 3000)
+
+    const changeh1 = function(){
+        document.querySelector('h1').
+        innerHTML = ' best course on internet'
+    }
+    const changeIt = setTimeout(changeh1, 5000)
+
+    // clearTimeout(changeIt)this is used to stop an timeout from occuring.
+    document.querySelector('#stop').addEventListener(
+        'click', function () {
+            clearTimeout(changeIt)
+            console.log("Stopped");
+        }
+    )
+
+
+
+
+
+</script>
+</html>

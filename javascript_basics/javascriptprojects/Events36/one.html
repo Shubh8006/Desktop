@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""  ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById("owl").onclick= function (){
+    //     alert("This is a n owl")
+    // }
+   // always use event listener in case of on click event because it is much more
+// feasible and provides many features.
+
+// one more type is attachEvent() both of them are older methods to access events
+// one more is jQuery - on
+
+// document.getElementById('owl').addEventListener('click', function(e){
+//     alert('owl is awesome')
+// })
+ // ** topics to study in deeply on your own **//
+//  type, timeStamp, defauktPrevented
+//  target, toElement, srcElement, currentTraget
+//  clientX, clientY, screenX, screenY
+//  altKey, ctrlKey, shiftKey, keyCode
+// document.getElementById('river').addEventListener('click', function(e){
+// console.log('this is a river');
+// },false)
+
+// document.getElementById('images').addEventListener('click', function(e){
+// console.log('this is a ul');
+// },false) // false is a default value
+// *** Event propogation: It consists of two concepts, event bubbling and even capturing.
+// event bubbling is reprsented by false,which is also a default value, whihc takes element 
+//inside(child) first and then the element outside as like in above example and event capturing is just 
+// opposite to it,as it induces outer or parent element first and then inside element, it is
+// reprsented by true.
+// document.getElementById('river').addEventListener('click', function(e){
+// console.log('this is a river');
+// },false)
+ 
+
+// document.getElementById('owl').addEventListener('click', function(e){
+//    console.log(' owl clicked ');
+//    e.stopImmediatePropagation()
+// },false)
+// stoppropagation is used, when we want to stop the event bubbling and to print only the
+// inner element.
+
+// document.getElementById('google').addEventListener('click',function(e){
+//     e.preventDefault();
+//     console.log("google Clicked");
+//  }, false)
+// here, we want to remove any of the list tag from the ul list.
+// document.querySelector('#images').addEventListener('click', function(e){
+// console.log(e.target.parentNode); // e.target is used for particularly targeting or selecting the tag in
+// // inside any parent element. parent node is slecting the parent element  as well
+
+// let removeIt = e.target.parentNode
+// removeIt.remove(); // 1st method
+// // removeIt.parentNode.removeChild(removeIt);
+// }, false)
+document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.tagName);
+    if (e.target.tagName === 'IMG'){
+        let removeIt = e.target.parentNode
+removeIt.remove();
+    }
+}, false)
+
+</script>
+</html>

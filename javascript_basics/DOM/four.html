@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai or code DOM Session</title>
+</head>
+<body style="background-color: black; color: blanchedalmond;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+   function addlanguage(langname){
+    const list = document.createElement("li")
+    list.innerHTML = `${langname}`
+    document.querySelector(".language").appendChild(list)
+   }
+   addlanguage("ruby")
+    
+
+    function addOptiLanguage(langname){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langname)) // optimized way
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("python")
+    // editing values in DOM
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // console.log(secondLang);
+    secondLang.innerHTML = "Swift" 
+    const newli = document.createElement("li") // optimized approach
+    newli.textContent = "c++"
+    secondLang.replaceWith(newli)
+
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = "<li>Typescript</li>"
+
+
+    // remove in dom
+    const lastlang = document.querySelector("li:last-child")
+    // lastlang.remove()
+
+</script>
+</html>

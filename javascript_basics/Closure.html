@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure and chai</title>
+</head>
+
+<body style="background-color: black;">
+<button id="orange">Orange button</button>
+<button id="green">Green button</button>
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla";
+    //     function displayName() {
+    //         // displayName() is the inner function, that forms the closure
+    //         console.log(name); // use variable declared in the parent function
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // function outer(){
+    //     let name = 'Shubham'
+    //     function inner(){
+    //         let name2 = 'shubh'
+    //         console.log(name)
+    //         function inner2(){
+    //             console.log(name2);
+    //         };
+    //     } // when there is function inside function, then the inner function have access to
+    //     // the variables of outer function is called lexical scoping, but if two functions are pr
+    //     // present inside a outer function then those two functions can't share the scope between
+    //     // each other
+    //     inner()
+
+    // }
+    // outer()
+    // console.log(name);
+
+    // Closures
+
+    function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+// here by calling 
+const myFunc = makeFunc();
+myFunc();
+
+
+</script>
+
+<script>
+// document.getElementById('orange').onclick = function(){
+//     document.body.style.backgroundColor = "orange"
+// }
+// document.getElementById('green').onclick = function(){
+//     document.body.style.backgroundColor = "green"
+// }
+
+function clickHandler(color){
+    document.body.style.backgroundColor = `${color}`
+    return function(){
+        document.body.stle.backgroundColor = `${color}`
+    }
+}
+
+document.getElementById('orange').onclick = clickHandler('orange')
+</script>
+
+</html>

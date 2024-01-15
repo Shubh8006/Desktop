@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React basic</title>
+</head>
+<body>
+    <button>Button clicked</button>
+</body>
+<script>
+    class React {
+        constructor(){
+            this.library = "React"
+            this.server = "https://localhost:300"
+            //requirement
+            document.querySelector('button')
+            .addEventListener('click', this.handleClick.
+            bind(this))//it grouped all the this into one .
+        }
+        handleClick(){
+            console.log("button clicked");
+            console.log(this);
+        }
+    }
+
+    //const app = new React()
+</script>
+</html>
+<!-- 
+The bind() function creates a new bound function. Calling the bound function generally
+ results in the execution of the function it wraps, which is also called the target
+  function. The bound function will store the parameters passed — which include the value
+   of this and the first few arguments — as its internal state. These values are stored in
+    advance, instead of being passed at call time. You can generally see const boundFn
+     = fn.bind(thisArg, arg1, arg2) as being equivalent to const boundFn = (...restArgs) 
+     => fn.call(thisArg, arg1, arg2, ...restArgs) for the effect when it's called 
+     (but not when boundFn is constructed).
+ -->

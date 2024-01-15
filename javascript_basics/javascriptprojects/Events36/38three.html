@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color: azure;">
+    <h1>Learning with chai or Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+const sayDate = function(str){
+    console.log(str, Date.now());
+}
+// const stopInterval = setInterval(sayDate, 4000, "Hi" ) // we can also print parameter
+// // in set interval like "hi" in above case.
+// clearInterval(stopInterval)
+let value
+const sayDate1 = function(str){
+    console.log(str, Date.now());
+}
+document.querySelector('#start').addEventListener(
+    'click', function(){
+        console.log("hey");
+        value= setInterval(sayDate1,4000, "heyy" )
+    }
+)
+document.querySelector('#stop').addEventListener(
+    'click', function(){
+        console.log("stopped");
+        
+        clearInterval(value)
+    }
+ )
+
+    </script>
+</html>
