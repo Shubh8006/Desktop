@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    b0x-sizing: border-box;
+}
+body{
+    background: #454545;
+    color: #fff;
+}
+.container{
+    width:100%;
+    height:100vh;
+    padding:20px;
+    display: flex;
+}
+.left, .right{
+flex-basis: 50% ;  /*so we can use 50% of the web page */
+padding: 10px;
+}
+textarea{
+    width: 100%;
+    height: 28%;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    border:0;
+    outline:0;
+    font-size: 18px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border:0;
+    outline:0;
+    font-size: 18px;
+}
+label i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+label {
+
+    display: flex;
+    align-items: centre; /* display- flex and align-items:centre will align the text horizontally*/
+    background: #000;
+    height: 30px;
+
+}
+
+

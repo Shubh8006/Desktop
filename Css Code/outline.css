@@ -1,0 +1,12 @@
+/* p{
+    outline-style: solid; 
+    border-style: solid;
+    padding: 10px;
+    outline-width: 10px;
+    outline-color: aqua;
+} */
+p{
+    border: 20px red solid;
+    padding: 10px;
+    border-style: dashed;
+}

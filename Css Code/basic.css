@@ -1,0 +1,13 @@
+h3{
+    color: brown;
+}
+h3{
+    background-color: darksalmon;
+}
+h1{
+    color: blue;
+}
+h2{
+    color: aquamarine;
+}
+/* priority of css: Inline>Internal>External */

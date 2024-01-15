@@ -1,0 +1,28 @@
+audio{
+    background-color: magenta;
+}
+
+  body{
+    background-color: aqua ;
+} 
+.image{
+    background-position: 20px;
+}
+
+
+/* .bgimage{
+    background-image: url(./302239-nature.jpg);
+    background-color: rgba(60, 179, 114, 0.562); */
+    
+
+ /* .bgimage ::before{
+    background-color: rgba(148, 143, 188, 0.564);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%; */
+/* 
+}   */
+
+/* can't understand the concept of background color in the inserted image.

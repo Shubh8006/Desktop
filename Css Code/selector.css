@@ -1,0 +1,24 @@
+p{
+    color: dodgerblue;
+}
+h1{
+    color: bisque;
+}
+#paragraph{
+color: blue;
+}
+.paragraph{
+    color: green;
+}
+
+.background{
+    background-color: blueviolet;
+}
+
+*{
+    font-size: 20px;
+}
+
+h1, .combine{
+    background-color: coral;
+}

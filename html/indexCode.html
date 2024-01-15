@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylecode.css">
+    <script src="https://kit.fontawesome.com/a572cbe9eb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="left">  <!--this left column to write code-->
+       <label><i class="fa-brands fa-html5"></i>HTML</label> <!--html icon-->
+       <textarea id="html-code" onkeyup="run()"></textarea>
+
+       <l><i class="fa-brands fa-css3-alt"></i>CSS</label> <!--css icon -->
+       <textarea id="css-code" onekeyup="run()"></textarea> <!--here i use onkeyup To detect if the user presses a key-->
+
+       <label><i class="fa-brands fa-js"></i>JavaScript</label> <!--here i use javascript icon-->
+       <textarea id="js-code" onkeyup="run()"></textarea>
+
+    </div>  
+    <div class="right"><!--this right column for output-->
+        <label><i class="fa-solid fa-play"></i></label>  <!--here i paste playicon -->
+     <iframe id="output"></iframe>
+   </div> 
+</div> 
+
+<script>
+    function run(){  //if user press any key(onkeyup="run()" this function_run execute 
+        let htmlCode = document.getElementById("html-code").value; //this store Value inside the textarea//
+        let cssCode = document.getElementById("css-code").value;
+        let jsCode = document.getElementById("js-code").value;
+        let output = document.getElementById("output");
+
+
+        output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
+       //now we have to display the value in output// //here we STYLE tag to merge html with css 
+      output.contentWindow.eval(jsCode); //it evaluate the js code in out.contentWindow//
+    }
+
+    </script>
+
+
+</body>
+</html>

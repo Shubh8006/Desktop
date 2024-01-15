@@ -1,0 +1,13 @@
+.mona{
+    border: 5px solid greenyellow;
+}
+
+.name{
+    border-color: brown;
+    border-style: groove;
+    border-radius: 15px;
+}
+
+p{
+    border: 25px green inset;
+}

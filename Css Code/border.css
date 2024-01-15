@@ -1,0 +1,13 @@
+/* pre{
+    border: 1px solid red
+} */
+
+.border{
+    border: 10px solid red
+}
+
+.name{
+    border-color: chartreuse;
+    border-style: double;
+    border-width: 30px;
+}

@@ -1,0 +1,12 @@
+.border{
+    color: blue;
+    border: red 5px solid;
+    height: 100%;
+}
+
+.bg image{
+    height: 100%;
+    width: 1%;
+}
+
+/* height or width feature is not working in my file, need to clear this concept from somewhere else */
