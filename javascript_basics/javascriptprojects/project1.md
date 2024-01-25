@@ -115,11 +115,11 @@ function validateGuess(guess){
   }else {
     prevguess.push(guess)
     if(numguess === 11){
-      displayGuess(guess)
+      ClearUpGuess(guess)
       displayMessage(`Game Over and random number was ${randomnum}`)
       endGame()
-    }else{
-      displayGuess(guess)
+    } else{
+    ClearUpGuess(guess)
       checkGuess(guess)
     }
   }
@@ -136,9 +136,9 @@ endGame()
 }
 }
 
-function displayGuess(guess){
+function ClearUpGuess(guess){
 userInput.value = ''
-guessSlot.innerHTML += `${guess},   `
+guessSlot.innerHTML += `${guess} `
 numguess++;
 remaining.innerHTML = `${11 - numguess}`
 }

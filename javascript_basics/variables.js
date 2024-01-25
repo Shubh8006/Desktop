@@ -14,7 +14,7 @@ var= function scope, let= block scope
 // accountId = 2
 accountEmail = "jha@gmail.com"
 accountPassword = "6354626"
-accountCity="mumbai"
+//accountCity="mumbai"
 
 console.log(accountId);
 

@@ -1,0 +1,39 @@
+.Entry{
+    height: 900px;
+    width: 600px;
+    background-color: cadetblue;
+}
+#height,#weight{
+    width: 200px;
+    height: 50px;
+}
+
+#Weight-Guide{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#results{
+    font-size: 40px;
+    margin-left: 100px;
+    margin-top: 30px;
+
+}
+button{
+    width: 200px;
+    height: 40px;
+
+    margin-left: 100px;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 1px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+  
+    font-size: 25px;
+}
+h1{
+    padding-left: 20px;
+    padding-top: 30px;
+}

@@ -9,7 +9,7 @@
 // }
 
 // const  greetings = "Hello-World"
-// for (const greet of greetings) {
+// for (const greet of greetings) {         
 //     if(greet== "-"){
 //         console.log(`space is detected`);
 //         break

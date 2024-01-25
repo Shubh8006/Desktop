@@ -5,10 +5,10 @@
 // timeof code execution
 
 
-// const temp = null
-// const id = Symbol('345') // example of symbol type
-// const id2 = Symbol('345')
-// console.log(id === id2);
+const temp = null
+const id = Symbol('345') // example of symbol type
+const id2 = Symbol('345')
+console.log(id === id2);
 
 // const bigNumber = 128694661269821469824698n // big int type
 // console.log(bigNumber);
