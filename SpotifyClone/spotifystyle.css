@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+body{
+    background-color: whitesmoke;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+   font-family: "Ubuntu", sans-serif;
+   
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 85px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    height: 45px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+   width: 70%;
+   margin: 25px auto;
+   border-radius: 15px ;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm4pmBFuO4GcN-1OUIwQfXihRfa3vTba36yA&usqp=CAU);
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.myProgressBar{
+   width: fit-content;
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem i{
+cursor: pointer;    
+}
+
+.songItem{
+height: 50px;
+display: flex;
+background-color: white;
+width: 80%;
+color: black;
+margin: 12px 0;
+justify-content: space-between;
+align-items: center;
+border-radius: 34px;
+}          
+.songItem img{
+width: 45px;
+margin: 0 25px;
+border-radius: 35px;
+}
+.timeStamp{
+    margin: 0 25px;
+}
+.songItemContainer{
+    margin-top: 75px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+transition: opacity 0.5s ease-in-out;
+}
